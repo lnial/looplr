@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="refresh" content="80;">
+<title>Looplr</title>
+
+<style>
+body {
+    background-color:#000000;
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif; font-size:20px;
+    color:#ffffff;
+}    
+
+.fadein { position:relative; height:332px; width:500px; }
+.fadein img { position:absolute; left:0; top:0; }
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){
+        $('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');
+    }, 4000);
+});
+</script>
+
+</head>
+<body>
+<h1>Looplr</h1>
+
+<div class="fadein">
+<!--<img src="http://29.media.tumblr.com/tumblr_lxj5wdPNFh1qd477zo1_400.gif">-->
+<img src="./getjpg/shows/0.jpg">
+<img src="./getjpg/shows/1.jpg">
+<img src="./getjpg/shows/2.jpg">
+<img src="./getjpg/shows/3.jpg">
+<img src="./getjpg/shows/4.jpg">
+<img src="./getjpg/shows/5.jpg">
+<img src="./getjpg/shows/6.jpg">
+<img src="./getjpg/shows/7.jpg">
+<img src="./getjpg/shows/8.jpg">
+<img src="./getjpg/shows/9.jpg">
+<img src="./getjpg/shows/10.jpg">
+<img src="./getjpg/shows/11.jpg">
+<img src="./getjpg/shows/12.jpg">
+<img src="./getjpg/shows/13.jpg">
+<img src="./getjpg/shows/14.jpg">
+<img src="./getjpg/shows/15.jpg">
+<img src="./getjpg/shows/16.jpg">
+<img src="./getjpg/shows/17.jpg">
+<img src="./getjpg/shows/18.jpg">
+<img src="./getjpg/shows/19.jpg">
+<img src="./getjpg/shows/20.jpg">
+</div>
+
+</body>
+</html>
