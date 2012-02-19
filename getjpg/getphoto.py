@@ -43,8 +43,8 @@ def download(url):
 	img.close()
 	localfile.close()
 
-def main():
-    """start function"""
+def get_photo():
+    """downloard photo"""
     make_url_list()
     for url in URL_LIST:
         if len(HASH_TABLE) >= HAVE_JPG and not url in HASH_TABLE:
@@ -74,7 +74,7 @@ def random_copy():
 if __name__ == '__main__':
     #sched loop
     while True:
-        s.enter(1800, 1, main, ()) 
+        s.enter(1800, 1, get_photo, ()) 
         for i in range(0, 180):
             s.enter(i * 10, 1, random_copy, ()) 
         s.run()
